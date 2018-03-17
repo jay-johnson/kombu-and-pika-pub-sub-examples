@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+
+  # RabbitMQ
+  rabbit:
+    container_name: "rabbit"
+    image: "rabbitmq:3.6.6-management"
+    hostname: "rabbit"
+    env_file:
+      - ./env/rabbit.env
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "25672:25672"
+    volumes:
+      - ./rabbitmq/data:/var/lib/rabbitmq
