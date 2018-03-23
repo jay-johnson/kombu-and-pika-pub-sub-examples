@@ -380,7 +380,7 @@ Send a Large Batch of Messages
 
 ::
 
-    ./kombu/batch_publisher.py
+    ./kombu/batch-publisher.py
 
     ...
 
